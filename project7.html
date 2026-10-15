@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel World</title>
+
+    <style>
+        
+
+        body {
+            background: #f4f8fb;
+            color: #333;
+        }
+
+        header {
+            background: #087e8b;
+            color: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .banner {
+            height: 430px;
+            background:
+            linear-gradient(#0005, #0005),
+            url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80");
+            
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 120px 15px;
+        }
+
+        .banner h1 {
+            font-size: 42px;
+            margin-bottom: 18px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #ff8c42;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #e66e20;
+        }
+
+        .heading {
+            text-align: center;
+            margin: 45px 0 30px;
+        }
+
+        .heading h2 {
+            color: #087e8b;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .places {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 0 25px 45px;
+        }
+
+        .card {
+            background: white;
+            width: 290px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 12px #0002;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            color: #087e8b;
+            margin: 15px;
+        }
+
+        .card p {
+            margin: 0 15px 12px;
+            line-height: 1.6;
+        }
+
+        .price {
+            color: #f47721;
+            font-weight: bold;
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        .card .btn {
+            margin: 0 15px 18px;
+        }
+
+        .services {
+            background: #e4f5f3;
+            padding: 20px;
+        }
+
+        .service {
+            background: white;
+            width: 240px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .service h3 {
+            color: #087e8b;
+            margin-bottom: 12px;
+        }
+
+        .service-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-bottom: 30px;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            padding: 50px 7%;
+        }
+
+        .about img {
+            width: 45%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h2 {
+            color: #087e8b;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 0 20px 45px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .contact {
+            background: #e4f5f3;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 550px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        footer {
+            background: #123b4a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            line-height: 2;
+        }
+
+        footer a {
+            color: #ffd166;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Travel World</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#places">Places</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h1>Explore The Beautiful World</h1>
+        <p>Travel More, Worry Less and Make Memories!</p>
+        <a href="#places" class="btn">Explore Now</a>
+        </div>
+    
+
+    <div class="heading">
+        <h2>Popular Tourist Places</h2>
+        <p>Choose your favourite destination</p>
+    </div>
+
+    <div class="places">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=700&q=80">
+            <h3>Agra</h3>
+            <p>Visit the beautiful Taj Mahal and explore Indian history.</p>
+            <div class="price">Rs. 2,999</div>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=700&q=80">
+            <h3>Manali</h3>
+            <p>Enjoy mountains, snowfall and beautiful valleys.</p>
+            <div class="price">Rs. 5,999</div>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=700&q=80">
+            <h3>Goa</h3>
+            <p>Enjoy beaches, sunsets and a relaxing holiday.</p>
+            <div class="price">Rs. 4,999</div>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=700&q=80">
+            <h3>Jaipur</h3>
+            <p>Explore beautiful forts, palaces and markets.</p>
+            <div class="price">Rs. 3,499</div>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=700&q=80">
+            <h3>Mumbai</h3>
+            <p>Discover famous attractions and city life.</p>
+            <div class="price">Rs. 3,999</div>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=80">
+            <h3>Kerala</h3>
+            <p>Enjoy green landscapes and peaceful backwaters.</p>
+            <div class="price">Rs. 6,499</div>
+            <a href="#contact" class="btn">Book Now</a>
+        </div>
+
+    </div>
+
+    <div class="heading">
+        <h2>Our Tour Packages</h2>
+        <p>Affordable packages for everyone</p>
+    </div>
+
+    <div class="places">
+
+        <div class="card">
+            <h3>Weekend Trip</h3>
+            <p>2 Days / 1 Night</p>
+            <p>Hotel stay and local sightseeing.</p>
+            <div class="price">Rs. 2,999</div>
+            <a href="#contact" class="btn">Choose Package</a>
+        </div>
+
+        <div class="card">
+            <h3>Family Holiday</h3>
+            <p>4 Days / 3 Nights</p>
+            <p>Hotel stay and sightseeing.</p>
+            <div class="price">Rs. 6,999</div>
+            <a href="#contact" class="btn">Choose Package</a>
+        </div>
+
+        <div class="card">
+            <h3>Adventure Trip</h3>
+            <p>3 Days / 2 Nights</p>
+            <p>Nature walks and outdoor activities.</p>
+            <div class="price">Rs. 4,499</div>
+            <a href="#contact" class="btn">Choose Package</a>
+        </div>
+
+    </div>
+
+    <div class="services">
+        <div class="heading">
+            <h2>Our Services</h2>
+            <p>We make your journey easy</p>
+        </div>
+
+        <div class="service-box">
+            <div class="service">
+                <h3>Transport</h3>
+                <p>Comfortable travel options for your trip.</p>
+            </div>
+
+            <div class="service">
+                <h3>Hotel Booking</h3>
+                <p>Choose a suitable place to stay.</p>
+            </div>
+
+            <div class="service">
+                <h3>Tour Guide</h3>
+                <p>Explore popular places with ease.</p>
+            </div>
+
+            <div class="service">
+                <h3>Holiday Plans</h3>
+                <p>Travel plans for friends and family.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80">
+
+        <div class="about-text">
+            <h2>About Our Company</h2>
+            <p>Welcome to Travel World Tour and Travels.</p>
+            <p>We help people explore beautiful places and enjoy their holidays. Our aim is to make every trip comfortable, enjoyable and memorable.</p>
+            <p>Choose your favourite destination and start planning your next holiday with us.</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h2>Travel Gallery</h2>
+        <p>Beautiful views from different destinations</p>
+    </div>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=600&q=80">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80">
+        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80">
+    </div>
+
+    <div class="contact">
+        <div class="heading">
+            <h2>Contact Us</h2>
+            <p>Send your details to plan a trip</p>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Enter Your Name" required>
+            <input type="email" placeholder="Enter Your Email" required>
+            <input type="tel" placeholder="Enter Your Phone Number" required>
+            <input type="text" placeholder="Enter Your Destination" required>
+            <textarea placeholder="Write Your Message"></textarea>
+            <button type="submit" class="btn">Submit Details</button>
+        </form>
+    </div>
+
+    <footer>
+        <h2>Travel World</h2>
+        <p>Your Journey, Our Responsibility!</p>
+
+        <p>
+            <a href="#home">Home</a>
+            <a href="#places">Places</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </p>
+
+        <p>Phone: 9301040184</p>
+        <p>Email: atulp@gmail.com</p>
+        <p>Copyright 2026 Travel World. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
